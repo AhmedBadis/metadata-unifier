@@ -1,0 +1,38 @@
+import chai from 'chai';
+import chaiHttp from 'chai-http';
+
+
+chai.use(chaiHttp);
+const login_url = 'https://pyrat.ukbonn.de/pyrat-test/cgi-bin';
+
+chai.request.agent(login_url)
+    .post('/specification')  // Ensure this matches the actual endpoint
+    .type('form')
+    .send({
+        username: '4-a607e0f331730fc4130acddeb437d2994b57070008c9',
+        password: '10-b059b846fa23978232ee4bfe912fdfaa0b52df4aeed6'
+    })
+    .end(function(err, res) {
+        if (err) {
+            return done(err);
+        }
+
+        // Check response status
+        console.log(res.status)
+    });
+*/
+chai.request.agent(login_url)
+    .post('/login.py')  // Ensure this matches the actual endpoint
+    .type('form')
+    .send({
+        username: 'ahmet.lakrach',
+        password: 'ahmedpyrat8102'
+    })
+    .end(function(err, res) {
+        if (err) {
+            return done(err);
+        }
+
+        // Check response status
+        console.log(res.status)
+    });
