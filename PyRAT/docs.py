@@ -15,17 +15,4 @@ response = session.get(base_url + '/docs', auth=payload)
 
 html_output = response.text
 
-# Get the desired filename from console input
-filename = input("Enter the name for the output file (without extension): ")
-
-# Create the full path for the HTML file
-html_output_path = f"Exports/{filename}.html"
-
-# Save HTML to a file
-with open(html_output_path, "w") as html_file:
-    html_file.write(html_output)
-
-# Print or save the HTML output
-print(f"HTML output saved to {html_output_path}")
-
 pprint(html_output)
