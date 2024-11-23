@@ -9,11 +9,17 @@ payload = HTTPBasicAuth('4-e6384666747e295680e7f9d94ec53a0f55a3d569c888',
 
 # Define the query parameters
 params = {
-    'k': ['id', 'name', 'status'],
-    's': 'name:asc',
+    'k': ["id", "name", "status"],
+    's': "name:asc",
+
+        # Unused sort parameters (Max 1)
+        # "cagetype:asc",
+        #"id:asc",
+        #"id:desc",
+        #"name:desc",
     'o': 0,
     'l': 100,
-    'status': 'active'
+    'status': "active"
 }
 
 # Start a session
