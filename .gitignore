@@ -1,2 +1,7 @@
 ldh-deployment/docker-compose.env
 /backup/
+/PyRAT/Exports/
+/RSpace/Imports/
+/RSpace/Exports/
+/Zotero/Imports/
+/Zotero/Exports/
