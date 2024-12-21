@@ -34,6 +34,38 @@ with open(pdf_file_path, 'rb') as f:
     reader = PyPDF2.PdfReader(f)
     number_of_pages = len(reader.pages)
 
+    # Define lists of possible synonyms for 'Abstract' and 'Introduction' in multiple languages
+    abstract_keywords = [
+        "Abstract",          # English
+        "Summary",           # English
+        "Executive Summary"  # English
+        "Résumé"             # French
+        "Zusammenfassung",   # German
+        "Resumen",           # Spanish
+        "Sinopsis",          # Spanish
+        "Prólogo",           # Spanish
+        "Resum",             # Catalan
+        "Abstracto",         # Portuguese
+        "ملخص"               # Arabic
+        "概要",               # Japanese (Gaiyō)
+        "摘要",               # Chinese (Zhaiyao)
+    ]
+    introduction_keywords = [
+        "Introduction",      # English, French
+        "Motivation",        # English
+        "Background",        # English
+        "Rationale",         # English
+        "Préface",           # French
+        "Préambule",         # French
+        "Einleitung",        # German
+        "Introducción",      # Spanish
+        "Introducció",       # Catalan
+        "Introdução",        # Portuguese
+        "مقدمة"              # Arabic
+        "序論"                # Japanese (Joron)
+        "引言",               # Chinese (Yǐnyán)
+    ]
+
     # Extract text and find the Abstract
     found_abstract = False
     extracted_text = ""
@@ -47,15 +79,15 @@ with open(pdf_file_path, 'rb') as f:
 
         for line in lines:
             # Check for the start of the Abstract section
-            if "Abstract" in line:
+            if any(keyword in line for keyword in abstract_keywords):
                 found_abstract = True
-                extracted_text += line.strip() + " "  # Include the line with "Abstract"
+                extracted_text += line.strip() + " "  # Include the line with the keyword
                 continue  # Move to the next line
 
             # If in the abstract, append the line
             if found_abstract:
-                # Stop if we reach "Introduction"
-                if "Introduction" in line:
+                # Stop if we reach any of the Introduction section keywords
+                if any(keyword in line for keyword in introduction_keywords):
                     found_abstract = False  # Stop capturing
                     break
 
@@ -119,4 +151,4 @@ print(json_output)
 
 # Visualizing the dependency graph
 from spacy import displacy
-displacy.serve(doc, style="dep")
+#displacy.serve(doc, style="dep")
