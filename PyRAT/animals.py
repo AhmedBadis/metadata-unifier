@@ -181,3 +181,23 @@ if response.status_code == 200:
     pprint(json_output)
 else:
     print(f"Error: {response.status_code} - {response.text}")
+
+
+
+import psutil
+import os
+
+# Measure memory usage before and after the API call
+process = psutil.Process(os.getpid())
+memory_before = process.memory_info().rss / (1024 ** 2)  # in MB
+
+# Perform the API request
+response = session.get(base_url + '/animals', auth=payload, params=params)
+
+memory_after = process.memory_info().rss / (1024 ** 2)  # in MB
+
+print(f"Memory Usage Before: {memory_before} MB")
+print(f"Memory Usage After: {memory_after} MB")
+print(f"Memory Difference: {memory_after - memory_before} MB")
+response_time = response.elapsed.total_seconds()
+print(f"Response Time: {response_time} seconds")

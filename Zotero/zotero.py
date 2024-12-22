@@ -34,7 +34,7 @@ with open(pdf_file_path, 'rb') as f:
     reader = PyPDF2.PdfReader(f)
     number_of_pages = len(reader.pages)
 
-    # Define lists of possible synonyms for 'Abstract' and 'Introduction' in multiple languages
+    # Define lists of synonyms for 'Abstract' and 'Introduction' in multiple languages
     abstract_keywords = [
         "Abstract",          # English
         "Summary",           # English
@@ -151,4 +151,4 @@ print(json_output)
 
 # Visualizing the dependency graph
 from spacy import displacy
-#displacy.serve(doc, style="dep")
+displacy.serve(doc, style="dep")
