@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from typing import List, Dict, Tuple
 from huggingface_hub import login
 
-model_loaded: bool = False  # global variable for Singleton Pattern
+model_loaded: bool = False  # global variable to load model only once
 pipe: pipeline = 0  # global Variable for the Model Pipeline
 
 def load_model():
