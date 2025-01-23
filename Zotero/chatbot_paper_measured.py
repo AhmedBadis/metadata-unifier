@@ -76,7 +76,6 @@ with open(pdf_file_path, 'rb') as f:
     # Extract text and find the Abstract
     found_abstract = False
     extracted_text = ""
-
     for page_num in range(number_of_pages):
         page = reader.pages[page_num]
         text = page.extract_text()

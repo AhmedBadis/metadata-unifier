@@ -33,7 +33,6 @@ else:
 with open(pdf_file_path, 'rb') as f:
     reader = PyPDF2.PdfReader(f)
     number_of_pages = len(reader.pages)
-
     # Define lists of synonyms for 'Abstract' and 'Introduction' in multiple languages
     abstract_keywords = [
         "Abstract",          # English
