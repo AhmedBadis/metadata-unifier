@@ -60,10 +60,10 @@ The core goal of this project is to implement an AI-powered system that automate
     ```
 2. **Running the LLM Model**:
    For LLM-based metadata processing, use run_model.ipynb to initialize the model:
-    1. Open run_model.ipynb and run the cells to launch the Docker image. (Docker must be installed on the system)
+    1. Open run_model.ipynb and run the cell to launch the Docker image. (Docker must be installed on the system)
     2. Access the model interface by navigating to http://localhost:8501 in your browser.
-3. **Integrating Research Data into NFDI4Health's LDH**:
-   To integrate the transformed metadata into the NFDI4Health Local Data Hub (LDH), run ldh-deployment/start.sh.
+3. **Integrating Research Data**:
+   To integrate the processed metadata into the NFDI4Health Local Data Hub (LDH), run ldh-deployment/start.sh.
 
 ### License
    The LDH component used in this project, including all code and documentation is property of the NFDI4Health group, and its usage here serves only as a research tool in this thesis. It operates under the MIT License (Copyright © 2022 Institute for Medical Informatics, Statistics and Epidemiology, University of Leipzig).
