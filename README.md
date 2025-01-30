@@ -22,7 +22,7 @@ The core goal of this project is to implement an AI-powered system that automate
 
 ## Technologies
 
-- **Python**: The primary programming language used for implementation, including various libraries such as `bs4`, `requests`, `PyPDF2`, `typing`, `json`, and `pyzotero`.
+- **Python**: The primary programming language used for implementation, including various libraries such as `beautifulsoup4`, `requests`, `PyPDF2`, `typing`, `json`, and `pyzotero`.
 - **Qwen2.5-1.5B-Instruct (LLM)**: A state-of-the-art language model fine-tuned for instruction-following tasks like data transformation and cleaning.
 - **Hugging Face Transformers**: Provides access to powerful pretrained models like Qwen2.5-1.5B-Instruct.
 - **Chainlit**: A framework for building and interacting with chatbots and conversational interfaces.
