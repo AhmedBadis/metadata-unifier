@@ -13,7 +13,7 @@ This project, developed for my bachelor thesis, explores the integration of arti
 
 ## Overview
 
-The core goal of this project is to implement an AI-powered system that automates and optimizes metadata transformation and analysis across different research platforms. By leveraging NLP tools such as the spaCy module in Python and LLMs such as **Qwen2.5-1.5B-Instruct** and combining them with imperative programming techniques, the system can import research data from different platforms such as PyRAT, RSpace and Zotero then convert it into a unified structured JSON format for easier interpretation and further analysis in the interdisciplinary fields of scientific research.
+The core goal of this project is to implement an AI-powered system that automates and optimizes metadata transformation and analysis across different research platforms. By leveraging NLP tools such as the spaCy module in Python and LLMs such as **Qwen2.5-1.5B-Instruct** and combining them with imperative programming techniques, the system can import research data from different platforms such as PyRAT, RSpace and Zotero then convert it into a unified structured JSON format for easier interpretation and further analysis in the interdisciplinary fields of scientific research. This project was developed to:
 
 - Automate metadata cleaning and conversion processes for datasets across multiple research systems.
 - Integrate large language models for more accurate and context-aware data transformation.
