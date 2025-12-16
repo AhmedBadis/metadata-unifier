@@ -1,10 +1,10 @@
 ldh-deployment/docker-compose.env
 /backup/
-/PyRAT/imports/
-/PyRAT/exports/
-/RSpace/imports/
-/RSpace/exports/
-/Zotero/imports/
-/Zotero/exports/
+/pyrat/imports/
+#/pyrat/exports/
+#/rspace/imports/
+#/rspace/exports/#
+#/zotero/imports/
+#/zotero/exports/
 .env
 .venv

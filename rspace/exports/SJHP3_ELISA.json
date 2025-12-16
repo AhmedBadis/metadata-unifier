@@ -1,0 +1,605 @@
+{
+    "Samples": [
+        "SJHP3",
+        "1-29 PEC",
+        "1-9 PLEC (no8 missing)"
+    ],
+    "Volumes and concentrations": [
+        [
+            [
+                "Cytokine",
+                "Coat",
+                "Standard",
+                "Detect"
+            ],
+            [
+                "IL-13",
+                "20?l IN 5ml",
+                "1?l in 500?l",
+                "5?l in 5ml"
+            ]
+        ],
+        [
+            [
+                "ELISA Concentrations"
+            ],
+            [
+                "Cytokine",
+                "Start (ug/ml)",
+                "Final (ug/ml)",
+                "Dilution",
+                "Buffer",
+                "Manufacture",
+                "Catologue",
+                "Location",
+                "Stocks"
+            ],
+            [
+                "Coating"
+            ],
+            [
+                "CCL3 (MIP 1a)",
+                "72",
+                "0.2",
+                "1 in 360",
+                "PBS",
+                "DuoSet ELISA",
+                "DY450",
+                "-20 oC Top Drawer below Steve's bench"
+            ],
+            [
+                "GM-CSF",
+                "360",
+                "2",
+                "1 IN 180",
+                "PBS",
+                "DuoSet ELISA",
+                "DY415",
+                "-80oC GMCSF ELISA Box"
+            ],
+            [
+                "IFNy",
+                "1 in 315",
+                "0.1M NaHCO3 pH9.6",
+                "Home Grown",
+                "NA",
+                "Fridge ELISA BOX",
+                "-80oC Antibody Box 1"
+            ],
+            [
+                "IL-4",
+                "1200",
+                "1.2",
+                "1 in 1000",
+                "PBS",
+                "Home Grown",
+                "NA",
+                "Fridge ELISA BOX",
+                "-80oC Antibody Box 1"
+            ],
+            [
+                "IL-5",
+                "800",
+                "1.6",
+                "1 in 500",
+                "PBS",
+                "Home Grown",
+                "NA",
+                "Fridge ELISA BOX",
+                "-80oC Antibody Box 3"
+            ],
+            [
+                "IL-6",
+                "500",
+                "1",
+                "1 in 500",
+                "0.1M Na2HPO4 pH12",
+                "BD Bioscience",
+                "554400",
+                "Fridge ELISA BOX"
+            ],
+            [
+                "IL-10",
+                "1000",
+                "4",
+                "1 in 250",
+                "0.2M NaHPO4 pH6.5",
+                "Pharmingen",
+                "551215",
+                "Fridge ELISA BOX"
+            ],
+            [
+                "IL-12p40",
+                "1000",
+                "2",
+                "1 in 500",
+                "0.2M Na2HPO4 pH6.5",
+                "BD Bioscience",
+                "551219",
+                "Fridge ELISA BOX"
+            ],
+            [
+                "IL-13",
+                "500",
+                "2",
+                "1 IN 250",
+                "PBS",
+                "R&D SYSTEMS",
+                "MAB413",
+                "Fridge ELISA BOX",
+                "-80oC IL-13 ELISA box"
+            ],
+            [
+                "IL-17",
+                "360",
+                "2",
+                "1 IN 180",
+                "PBS",
+                "DuoSet ELISA",
+                "DY421",
+                "Fridge ELISA BOX"
+            ],
+            [
+                "M-CSF",
+                "360",
+                "2",
+                "1 IN 180",
+                "PBS",
+                "DuoSet ELISA",
+                "DY416",
+                "-80oC GMCSF ELISA Box"
+            ],
+            [
+                "TNFa",
+                "144",
+                "0.8",
+                "1 in 180",
+                "PBS",
+                "DuoSet ELISA",
+                "DY410",
+                "Fridge ELISA BOX"
+            ],
+            [
+                "Relm alpha",
+                "100",
+                "1",
+                "1 in 100",
+                "Carbonate Buffer",
+                "Peprotech",
+                "500-P214",
+                "-20oC Top Drawer below Steve's bench",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "YM1",
+                "720",
+                "1",
+                "1 in 720",
+                "PBS",
+                "DuoSet ELISA",
+                "DY2446",
+                "Fridge ELISA BOX"
+            ],
+            [
+                "Standard"
+            ],
+            [
+                "CCL3 (MIP 1a)",
+                "85ng/ml",
+                "0.5ng/ml",
+                "1 in 170",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY450",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "GM-CSF",
+                "50ng/ml",
+                "500pg/ml",
+                "1 IN 100",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY415",
+                "-80oC GMCSF ELISA box",
+                "Fridge ELISA box"
+            ],
+            [
+                "IFNy",
+                "10",
+                "50",
+                "1 in 200",
+                "10% NCS in PBS",
+                "Peprotech",
+                "315-05",
+                "-20oC Top Drawer below Steve's bench",
+                "10ul -80Oc Top Shelf 100ul -80oC top shelf. If low on 10ul stocks aliquot 100ul stock and store in -20oC and/or -80oC"
+            ],
+            [
+                "IL-4",
+                "2",
+                "8ng/ml",
+                "1 in 250",
+                "10% NCS in PBS",
+                "Peprotech",
+                "214-14",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "IL-5",
+                "5",
+                "10ng/ml",
+                "1 in 500",
+                "10% NCS in PBS",
+                "Peprotech",
+                "215-15",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "IL-6",
+                "5",
+                "25ng/ml",
+                "1 in 200",
+                "10% NCS in PBS",
+                "Peprotech",
+                "216-16",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "IL-10",
+                "5",
+                "10ng/ml",
+                "1 in 500",
+                "10% NCS in PBS",
+                "Peprotech",
+                "210-10",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "IL-12p40",
+                "5",
+                "50ng/ml",
+                "1 in 1000",
+                "10% NCS in PBS",
+                "Peprotech",
+                "210-12",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "IL-13",
+                "5",
+                "10ng/ml",
+                "1 IN 500",
+                "1% BSA in PBS",
+                "Peprotech",
+                "210-13",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "IL-17",
+                "160ng/ml",
+                "1ng/ml",
+                "1 in 160",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY421",
+                "Fridge ELISA Box",
+                "Fridge ELISA box"
+            ],
+            [
+                "M-CSF",
+                "50ng/ml",
+                "1000pg/ml",
+                "1 IN 50",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY416",
+                "-80oC GMCSF ELISA box",
+                "Fridge ELISA box"
+            ],
+            [
+                "TNFa",
+                "20ng/ml",
+                "2ng/ml",
+                "1 in 100",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY410",
+                "Fridge ELISA Box",
+                "Fridge ELISA box"
+            ],
+            [
+                "Relm alpha",
+                "25",
+                "100ng/ml",
+                "1 IN 250",
+                "10% NCS in PBS",
+                "Peprotech",
+                "450-26",
+                "-20oC Top Drawer below Steve's bench",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "YM1",
+                "5",
+                "20ng/ml",
+                "1 IN 250",
+                "1% BSA in PBS",
+                "Homegrown",
+                "SJBM13 PLAGE SAMPLES",
+                "-80oC YM1 standard box",
+                "-80oC YM1 standard box"
+            ],
+            [
+                "Detection"
+            ],
+            [
+                "CCL3 (MIP 1a)",
+                "18",
+                "0.05",
+                "1 IN 360",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY450",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "GM-CSF",
+                "9",
+                "0.05",
+                "1 in 180",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY415",
+                "-80oC GMCSF ELISA box"
+            ],
+            [
+                "IFNy",
+                "500",
+                "1",
+                "1 in 500",
+                "10% NCS in PBS",
+                "Biolegend",
+                "505804",
+                "Fridge ELISA Box"
+            ],
+            [
+                "IL-4",
+                "500",
+                "0.25",
+                "1 in 2000",
+                "10% NCS in PBS",
+                "Biolegend",
+                "504202",
+                "Fridge ELISA Box"
+            ],
+            [
+                "IL-5",
+                "500",
+                "0.17",
+                "1 in 3000",
+                "10% NCS in PBS",
+                "Biolegend",
+                "504402",
+                "Fridge ELISA Box"
+            ],
+            [
+                "IL-6",
+                "500",
+                "0.5",
+                "1 in 1000",
+                "10% NCS in PBS",
+                "BD Bioscience",
+                "554402"
+            ],
+            [
+                "IL-10",
+                "500",
+                "2",
+                "1 in 250",
+                "10% NCS in PBS",
+                "Pharmingen",
+                "554423",
+                "Fridge ELISA Box",
+                "ELISA Spares Box"
+            ],
+            [
+                "IL-12p40",
+                "500",
+                "0.5",
+                "1 in 1000",
+                "10% NCS in PBS",
+                "Biolegend",
+                "505302",
+                "Fridge ELISA Box"
+            ],
+            [
+                "IL-13",
+                "50",
+                "0.05",
+                "1 IN 1000",
+                "1% BSA in PBS",
+                "R&D SYSTEMS",
+                "BAF413",
+                "-80oC IL-13 ELISA Box"
+            ],
+            [
+                "IL-17",
+                "72",
+                "0.4",
+                "1 in 180",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY421",
+                "Fridge ELISA Box"
+            ],
+            [
+                "M-CSF",
+                "18",
+                "0.1",
+                "1 in 180",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY416",
+                "-80oC GMCSF ELISA box"
+            ],
+            [
+                "TNFa",
+                "36",
+                "0.2",
+                "1 in 180",
+                "1% BSA in PBS",
+                "DuoSet ELISA",
+                "DY410",
+                "Fridge ELISA Box"
+            ],
+            [
+                "Relm alpha",
+                "50",
+                "0.25",
+                "1 IN 200",
+                "10% NCS in PBS",
+                "Peprotech",
+                "500-P214Bt",
+                "-20oC Top Drawer below Steve's bench",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "YM1",
+                "50",
+                "0.1",
+                "1 in 500",
+                "1% BSA in PBS",
+                "R&D SYSTEMS",
+                "BAF2446",
+                "-20oC Top Drawer below Steve's bench"
+            ],
+            [
+                "Strepatvidin Peroxidase"
+            ],
+            [
+                "Type",
+                "Cytokine",
+                "Dilution"
+            ],
+            [
+                "KPL",
+                "IL-4",
+                "All 1in 1000 dilution in 10% NCS in PBS"
+            ],
+            [
+                "IL-5"
+            ],
+            [
+                "IL-6"
+            ],
+            [
+                "IL-10"
+            ],
+            [
+                "IL-12p40"
+            ],
+            [
+                "Relma"
+            ],
+            [
+                "IFNy"
+            ],
+            [
+                "DuoSet",
+                "TNFa",
+                "All 1 in 200 diltion in 1% BSA in PBS"
+            ],
+            [
+                "YM1"
+            ],
+            [
+                "IL-13"
+            ],
+            [
+                "IL-17"
+            ],
+            [
+                "*SJBM13 PLAGE samples 4,5,6,7,12,13,14,15,16,20,21,22,23 200ul of each"
+            ]
+        ]
+    ],
+    "Plate Plan": [
+        [
+            [
+                "1",
+                "9",
+                "17",
+                "25",
+                "4"
+            ],
+            [
+                "2",
+                "10",
+                "18",
+                "26",
+                "5"
+            ],
+            [
+                "3",
+                "11",
+                "19",
+                "27",
+                "6"
+            ],
+            [
+                "4",
+                "12",
+                "20",
+                "28",
+                "7"
+            ],
+            [
+                "5",
+                "13",
+                "21",
+                "29",
+                "9"
+            ],
+            [
+                "6",
+                "14",
+                "22",
+                "1",
+                "Top"
+            ],
+            [
+                "7",
+                "15",
+                "23",
+                "2"
+            ],
+            [
+                "8",
+                "16",
+                "24",
+                "3",
+                "Blank"
+            ]
+        ]
+    ],
+    "Protocol": [
+        "Coat with primary antibody 50ul/ well (ON at 4oC)",
+        "Wash x3 PBS-T",
+        "200ul/well Block added (2hrs/0N at RT/4oC)",
+        "Samples and standards added 50ul/well at appropirate concentration (ON at 4oC)",
+        "Plates washed x3 PBS-T",
+        "Detection Antibody added 50ul/well (2hrs at RT)",
+        "Plates washed x3 PBS-T",
+        "Streptavidin HPR added 50ul/well (30 min at 37oC)",
+        "Plates washed x8 PBS-T",
+        "50ul/well TMB substrate added allowed to develop",
+        "50ul/well 0.18M H2SO4 added to stop",
+        "Plates read at 450nm"
+    ],
+    "Changes": [
+        "Plate coated on the 10.01.12",
+        "Samples and standards 12.01.12",
+        "Finished 13.01.12"
+    ]
+}
