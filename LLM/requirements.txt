@@ -1,6 +1,0 @@
-chainlit
-transformers
-torch
-accelerate==1.0.1
-bitsandbytes
-numpy==1.26.4
