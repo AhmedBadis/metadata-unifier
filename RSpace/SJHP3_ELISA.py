@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import json
 
 # Load the HTML file
-with open('Imports/doc_SJHP3-ELISA-250555.html', 'r', encoding='utf-8') as file:
+with open('imports/doc_SJHP3-ELISA-250555.html', 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file, 'lxml')
 
 # Prepare a dictionary to hold the data
@@ -61,7 +61,7 @@ json_output = json.dumps(data, indent=4)
 filename = input("Enter the name for the output file (without extension): ")
 
 # Create the full path for the JSON file
-json_output_path = f"Exports/{filename}.json"
+json_output_path = f"exports/{filename}.json"
 
 # Save JSON to a file
 with open(json_output_path, "w") as json_file:

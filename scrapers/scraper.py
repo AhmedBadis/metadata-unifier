@@ -1,13 +1,21 @@
+
+import os
+from dotenv import load_dotenv
 import requests
 from bs4 import BeautifulSoup
 import json
 from urllib.parse import urlparse, parse_qs
 
+load_dotenv()  # Load environment variables
+
 # Initialize session & perform login
 session = requests.Session()
-base_url = 'https://PyRAT.ukbonn.de/PyRAT-test/cgi-bin'
+base_url = os.getenv('PYRAT_BASE_URL')
 login_url = base_url + '/login.py'
-payload = {'username': 'some_username', 'password': 'some_password'}
+payload = {
+    'username': os.getenv('PYRAT_AUTH_USERNAME'),
+    'password': os.getenv('PYRAT_AUTH_PASSWORD')
+}
 response = session.post(login_url, data=payload)
 
 # Check if login was successful

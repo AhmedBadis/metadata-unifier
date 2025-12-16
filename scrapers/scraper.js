@@ -1,16 +1,16 @@
+import 'dotenv/config';
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 
-
 chai.use(chaiHttp);
-const login_url = 'https://pyrat.ukbonn.de/pyrat-test/cgi-bin';
+const login_url = process.env.SCRAPERS_LOGIN_URL;
 
 chai.request.agent(login_url)
     .post('/specification')  // Ensure this matches the actual endpoint
     .type('form')
     .send({
-        username: '4-a607e0f331730fc4130acddeb437d2994b57070008c9',
-        password: '10-b059b846fa23978232ee4bfe912fdfaa0b52df4aeed6'
+        username: process.env.SCRAPERS_PAYLOAD_USERNAME,
+        password: process.env.SCRAPERS_PAYLOAD_PASSWORD
     })
     .end(function(err, res) {
         if (err) {
@@ -20,13 +20,13 @@ chai.request.agent(login_url)
         // Check response status
         console.log(res.status)
     });
-*/
+
 chai.request.agent(login_url)
     .post('/login.py')  // Ensure this matches the actual endpoint
     .type('form')
     .send({
-        username: 'ahmet.lakrach',
-        password: 'ahmedpyrat8102'
+        username: process.env.SCRAPERS_PAYLOAD_USERNAME,
+        password: process.env.SCRAPERS_PAYLOAD_PASSWORD
     })
     .end(function(err, res) {
         if (err) {

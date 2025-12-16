@@ -3,3 +3,5 @@ pyzotero
 PyPDF2
 beautifulsoup4
 requests
+dotenv
+psutil
