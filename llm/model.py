@@ -1,26 +1,38 @@
+import os
 import chainlit as cl
 from chainlit import user_session
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from typing import List, Dict, Tuple
 from huggingface_hub import login
 
+# optional: load .env if python-dotenv is available
+try:
+    from dotenv import load_dotenv  # type: ignore
+    load_dotenv()
+except Exception:
+    pass
+
 model_loaded: bool = False  # global variable to load model only once
 pipe: pipeline = 0  # global Variable for the Model Pipeline
 
 def load_model():
     """
-    Load the LLM Model, Qwen/Qwen2.5-1.5B-Instruct, the fine-tuned English speaking model from Qwen. Significant improvements in instruction following,      generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON.
+    Load the LLM Model, Qwen/Qwen2.5-1.5B-Instruct, the fine-tuned English speaking model from Qwen. Significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON.
 
     Returns
     -------
     pipe : a TextGenerationPipeline, which can be used on HuggingFace Models for inference
     """
-    login("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")
-    model_id: str = "Qwen/Qwen2.5-1.5B-Instruct"
+    hf_token = os.getenv("HF_TOKEN")
+    if not hf_token:
+        raise EnvironmentError("HF_TOKEN environment variable is not set")
+
+    login(hf_token)
+    model_id: str = os.getenv("MODEL_ID", "Qwen/Qwen2.5-1.5B-Instruct")
 
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        device_map="cuda"  # Use "cuda" to run on GPU / "auto" to allocate resources dynamically
+        device_map=os.getenv("DEVICE", "cuda")  # Use "cuda" to run on GPU / "auto" to allocate resources dynamically
     )
 
     tokenizer = AutoTokenizer.from_pretrained(model_id)
